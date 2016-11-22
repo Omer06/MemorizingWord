@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xmlns:security="http://www.springframework.org/schema/security"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.2.xsd
+		http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.2.xsd
+		http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security-4.0.xsd">
+
+
+	<security:http pattern="/title/updatewithfile" security="none" />
+	<security:http auto-config="true">
+		<!-- <security:access-denied-handler error-page="/exception/denied"/> -->
+		<security:intercept-url pattern="/" access="permitAll"/>
+		<security:intercept-url pattern="/index" access="permitAll"/>
+		<security:intercept-url pattern="/login/*" access="isAnonymous()"/>
+		<security:intercept-url pattern="/register/*" access="isAnonymous()"/>
+		<security:intercept-url pattern="/logout" access="isAuthenticated()"/>
+		<security:intercept-url pattern="/study/*" access="isAuthenticated()"/>
+		<security:intercept-url pattern="/title/*" access="isAuthenticated()"/>
+		<security:intercept-url pattern="/options/*" access="isAuthenticated()"/>
+		<security:intercept-url pattern="/chat/*" access="isAuthenticated()"/>
+		<security:intercept-url pattern="/exception/*" access="permitAll"/>
+		<security:intercept-url pattern="/desire/*" access="permitAll"/>
+		<security:form-login login-page="/login/form" login-processing-url="/login" password-parameter="password" username-parameter="username" default-target-url="/" authentication-failure-url="/login/error" />
+		<security:remember-me user-service-ref="authenticationService" remember-me-parameter="rememberMe" remember-me-cookie="remember-me" />
+	</security:http>
+
+	<security:authentication-manager>
+		<security:authentication-provider>
+		<security:password-encoder ref="passwordEncoder"></security:password-encoder>
+			<security:jdbc-user-service id="authenticationService" data-source-ref="dataSource" 
+				users-by-username-query="select username,password,enable from user where username=?"
+				authorities-by-username-query="select u.username,r.role from user u inner join roles r on u.roleId=r.id where u.username=?"/>
+		</security:authentication-provider>
+	</security:authentication-manager>
+	
+	<bean id="passwordEncoder"
+		class="org.springframework.security.crypto.password.StandardPasswordEncoder">
+	</bean>
+	
+</beans>

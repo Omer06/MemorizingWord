@@ -1,0 +1,1007 @@
+	<!-- {Template css} -->
+	
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,
+	blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn,
+	em, font, img, ins, kbd, q, s, samp, small, strike, sub, sup, tt, var,
+	b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+	table, caption, tbody, tfoot, thead, tr {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	/*font-size: 100%;
+	vertical-align: baseline;*/
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/
+textarea {
+	overflow: auto;
+}
+
+body {
+	background-color: #46898B;
+	cursor: default;
+}
+
+.main {
+	width: 800px;
+	height: auto;
+	margin: 100px auto
+}
+
+.menu {
+	width: 670px;
+	height: 50px;
+	float: left
+}
+
+.line {
+	width: 660px;
+	height: 3px;
+	background-color: #2F6062;
+	border-radius: 0 100% 0 0;
+	margin-top: 1px;
+	float: left
+}
+
+.content {
+	width: 798px;
+	min-height: 800px;
+	background-color: #FFF6DA;
+	border-radius: 5px;
+	margin-top: 20px;
+	float: left;
+	border: 1px solid #FFE59C
+}
+
+.menu ul li {
+	float: left;
+}
+
+.menu ul li a {
+	display: block;
+	font: 20px serif;
+	text-decoration: none;
+	padding: 10px;
+	color: #000;
+	background-color: #CF9903;
+	border-right: 1px solid #FFBC00;
+}
+
+input[type="text"], input[type="password"], textArea {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	border: 2px solid #d3d3d3;
+	border-radius: 6px;
+	line-height: 22px;
+	padding: 0 13px;
+	background: #f8f8f8;
+	outline: 0;
+}
+
+input[type="submit"], button {
+	display: inline-block;
+	width: auto;
+	padding: 0 20px;
+	height: 35px;
+	font: 14px/35px sans-serif;
+	background: #EBEBEB;
+	border-radius: 15px;
+	color: #000;
+	cursor: pointer;
+	outline: 0;
+}
+
+input[type="submit"]:hover, button:hover {
+	background-color: #D5D5D5;
+}
+
+select {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	width: 215px;
+	height: 32px;
+	border: 2px solid #d3d3d3;
+	border-radius: 6px;
+	line-height: 22px;
+	padding: 0 13px;
+	background: #f8f8f8;
+	cursor: pointer;
+	transition: 300ms border-color;
+}
+
+select:hover {
+	border-color: #939393;
+}
+
+select:focus {
+	outline: 0;
+}
+
+.profile {
+	float: left;
+	width: 140px;
+	margin-left: -10px;
+}
+
+.profile ul li {
+	float: left;
+}
+
+.profile ul li li {
+	float: none;
+}
+
+.profile ul li ul {
+	display: none;
+	position: absolute;
+}
+
+.profile ul li a {
+	display: block;
+	height: 29px;
+	width: 140px;
+	background-color: #CF9903;
+	border-bottom: 1px solid #FFBC00;
+	border-right: 1px solid #FFBC00;
+	border-left: 1px solid #FFBC00;
+	color: black;
+	text-decoration: none;
+	padding-top: 11px;
+	text-align: center;
+	font: 18px serif;
+}
+
+.profile ul li #profileMainLink {
+	background-image: url("/MemorizingWord/resources/image/profile.png");
+	background-repeat: no-repeat;
+	background-position: 116px 18px;
+	background-size: 18px 20px;
+	border: 1px solid #FFBC00;
+}
+
+.profile ul li a:hover {
+	background-color: #FF7300;
+}
+
+.result{
+	color: blue;
+	font: 15px serif;
+	margin-left: 250px;
+}
+
+<!-- {Title css} -->
+
+.titleForm {
+	width: 700px;
+	height: auto;
+	margin: 50px auto 0 auto;
+	background-color: #FFEEB8;
+	border: 3px solid #FFE593;
+	border-radius: 5px
+}
+
+.titleForm .titleName {
+	width: 300px;
+	height: 50px;
+	margin: 50px 0 0 20px;
+	float: left
+}
+
+.titleForm .adjustWordField {
+	width: 200px;
+	height: 50px;
+	margin: 50px 0 0 175px;
+	float: left;
+}
+
+.titleForm .adjustWordField button {
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 30px;
+	height: 30px;
+	background-size: 25px;
+	background-color: #FFEEB8;
+	border: 0 solid #FFE593;
+	margin-left: 5px
+}
+
+.titleForm .adjustWordField #addWordField {
+	background-image: url("/MemorizingWord/resources/image/ekle.png");
+	margin-left: 70px
+}
+
+.titleForm .adjustWordField #removeWordField {
+	background-image: url("/MemorizingWord/resources/image/sil.png");
+}
+
+.titleForm .newWordListField {
+	width: 600px;
+	height: auto;
+	margin: 50px 0 0 50px;
+	float: left
+}
+
+.titleForm .newWordListField .newWord {
+	width: 510px;
+	height: auto;
+	margin: 12px auto 0 auto;
+}
+
+.titleForm .newWordListField .newWordListColumnTitle label {
+	-webkit-appearance: textfield;
+	font: 18px serif;
+	width: 145px;
+	height: 25px;
+}
+
+.titleForm .newWord #name, .newWord #meaning, .newWord #reminding {
+	width: 140px;
+	height: 25px;
+	padding: 0
+}
+
+.titleForm #newTitleAdding {
+	margin: 20px 0 30px 100px;
+}
+
+.titleForm #titleSubmit {
+	margin: 0 0 0 300px;
+}
+
+.titleForm .newTitle {
+	margin: 50px 0 20px 30px;
+	display: none
+}
+
+.newTitle #newTitleSubmit {
+	margin: 20px 0 0 20px;;
+	display: none;
+}
+
+<!-- {StudyOptions css} -->
+
+.options {
+	width: 580px;
+	height: 190px;
+	margin: 150px auto 0 auto;
+	padding: 10px;
+}
+
+.options .titleSelection, .options .styleSelection {
+	width: 290px;
+	height: 130px;
+	float: left;
+}
+
+.titleSelection  .fieldTitle, .styleSelection .fieldTitle {
+	width: 300px;
+	height: 25px;
+	margin-top: 25px;
+	text-align: center;
+	font: 20px serif
+}
+
+.titleSelection .titleList, .styleSelection .styleList {
+	width: 217px;
+	height: auto;
+	margin: 10px auto 0 auto;
+}
+
+#submit {
+	width: 200px;
+	margin: 0 0 0 200px;
+	float: left;
+}
+
+<!-- {Register css} -->
+
+.registerForm {
+	width: 500px;
+	height: auto;
+	margin: 200px auto 0 auto;
+}
+
+.registerForm div {
+	width: 400px;
+	height: 25px;
+	margin: 40px auto 0 auto
+}
+
+.registerForm div, .usernameInput input, .emailInput input,
+	.passwordInput input {
+	width: 300px;
+	height: 35px;
+	font: 18px serif;
+	border-radius: 5px
+}
+
+.registerForm .submitInput input {
+	margin: -10px 0 0 230px;
+}
+
+.registerForm .error {
+	font: 16px serif;
+	color: red;
+}
+
+.registerForm .result{
+	color: blue;
+	font: 15px serif;
+	margin-left: 100px;
+}
+
+<!-- {Options css} -->
+
+.titleOptionsTitle, .wordOptionsTitle {
+	width: 120px;
+	height: 30px;
+	background: #FFEAA8;
+	text-align: center;
+	border-left: 2px double #FFE793;
+	border-right: 2px double #FFE793;
+	border-top: 2px double #FFE793;
+	border-radius: 5px 5px 0 0;
+	margin: 100px 0 0 100px;
+	font: bold 18px serif;
+	padding-top: 10px;
+}
+
+.titleOptionsWrapper, .wordOptionsWrapper {
+	width: 80%;
+	height: auto;
+	background-color: #FFF4CE;
+	margin: 0 0 0 10%;
+	border: 2px double #FFEFBC;
+	border-radius: 5px;
+	float: left;
+	padding-bottom: 10px;
+}
+
+.titleOptionsHeader, .wordOptionsHeader {
+	width: 95%;
+	height: 60px;
+	background-color: #FFEAA8;
+	margin: 15px 0 0 2.5%;
+	border: 1px double #FFE595;
+	border-radius: 3px;
+	float: left
+}
+
+.titleOptionsField, .titleListField {
+	font: bold 17px serif;
+	margin: 20px 0 0 150px;
+	float: left;
+}
+
+.titleOptionsContent, .wordOptionsContent {
+	width: 95%;
+	height: auto;
+	background-color: #FFF0C0;
+	margin: 7px 0 0 2.5%;
+	border: 1px double #FFEEB6;
+	border-radius: 3px;
+	float: left;
+}
+
+.titleOptionsContent .delete, .titleOptionsContent .create {
+	margin: 20px 0 0 243px;
+	float: left;
+	height: 80px;
+	float: left;
+	display: none
+}
+
+.titleOptionsContent .delete input[type='submit'], .titleOptionsContent .create input[type='submit']
+	{
+	width: 140px;
+	height: 35px;
+	margin: 10px 0 0 36px;
+}
+
+.titleOptionsContent .rename {
+	margin: 20px 0 0 80px;
+	float: left;
+	height: 80px;
+	float: left;
+	display: none
+}
+
+.titleOptionsContent .rename input[type='text'], .titleOptionsContent .create input[type='text']
+	{
+	width: 185px;
+	height: 28px
+}
+
+.titleOptionsContent .rename input[type='submit'] {
+	width: 350px;
+	height: 33px;
+	border-radius: 7px;
+	margin: 5px 0 0 40px;
+}
+
+.wordOptionsTitle {
+	margin-top: 300px
+}
+
+.wordOptionsContent .wordListField {
+	width: 95%;
+	float: left;
+	margin: 10px 0 0 2.5%;
+	height: auto;
+	display: none
+}
+
+.wordListField .wordRow {
+	width: 40%;
+	height: 30px;
+	margin-left: 30%;
+}
+
+.wordListField #name, .wordListField #meaning, .wordListField #wordId {
+	float: left;
+	width: 31%;
+	height: 18px;
+	font: 16px serif;
+	padding-top: 2px;
+	overflow: hidden;
+}
+
+.wordListField input[type='submit'] {
+	margin: 20px 10px 0 295px;
+	width: 60px;
+	border-radius: 5px;
+}
+
+#info {
+	color: blue;
+	font: 16px serif;
+	margin-left: 20px;
+}
+
+.operationResult {
+	float: left;
+	margin: 250px 0 0 100px;
+	color: blue;
+	font: 16px serif;
+	position: absolute;
+}
+
+<!-- {Login css} -->
+
+.loginForm {
+	width: 380px;
+	height: 280px;
+	margin: 200px auto 0 auto;
+	padding: 10px
+}
+
+.loginForm div {
+	width: 300px;
+	height: 25px;
+	margin: 30px auto 0 auto
+}
+
+.loginForm .usernameInput input, .passwordInput input {
+	width: 300px;
+	height: 35px;
+	font: 18px serif;
+	border-radius: 5px
+}
+
+.loginForm .rememberMeInput {
+	font: 18px serif
+}
+
+.loginForm .rememberMeInput input {
+	width: 30px;
+	height: 15px;
+}
+
+.loginForm .submitInput input {
+	margin: -30px 0 0 230px;
+}
+
+.loginForm .error { margin: 0 0 0 0; }
+
+.links { margin: -40px 0 0 250px; }
+.links ul li a { display: block; color: #0A00C0; text-decoration: none;}
+.links ul li a:hover {text-decoration: underline;}
+
+<!-- {Index css} -->
+
+.informUsersWrapper div {
+	text-align: justify;
+	color: #002FB0;
+	font: 16px arial;
+}
+
+.ourAimTitle, .userGuideTitle {
+	width: 120px;
+	text-align: center;
+	border-top: 3px double #C1B700;
+	border-right: 3px double #C1B700;
+	border-left: 3px double #C1B700;
+	height: 28px;
+	border-radius: 5px 5px 0 0;
+	margin: 50px 0 0 70px;
+	padding-top: 7px;
+}
+
+.ourAim, .userGuide {
+	width: 600px;
+	padding: 20px 25px;
+	margin: 0 0 20px 50px;
+	border: 3px double #C1B700;
+	border-radius: 5px;
+}
+
+.userGuideTitle {
+	margin-top: 100px;
+}
+
+<!-- {ForgotPassword css} -->
+
+.forgotPasswordField {
+	width: 300px;
+	margin: 200px auto 0 auto;
+}
+
+.forgotPasswordField #forgotPassword input[type='text'] {
+	width: 300px;
+	margin: 15px 0 0 0;
+	height: 30px;
+	font: 18px serif;
+}
+
+.forgotPasswordField #forgotPassword input[type='submit'] {
+	width: 100px;
+	border-radius: 5px;
+	margin: 15px auto 0 230px;
+}
+
+#result {
+	color: blue;
+	margin: 100px 0 0 250px;
+}
+
+<!-- {Desire css} -->
+
+.desireFormWrapper {
+	width: 500px;
+	height: auto;
+	margin: 200px auto 0 auto
+}
+
+.desireForm {
+	width: 400px;
+	height: auto;
+	margin: 40px auto 20px auto;
+}
+
+.nameField, .emailField, .desireField {
+	width: 300px;
+	height: auto;
+	margin: 20px 0 0 0;
+}
+
+.desireFormWrapper input, .desireFormWrapper textArea {
+	margin: 0 0 0 50px;
+	height: 25px
+}
+
+.desireFormWrapper textArea {
+	width: 300px;
+	height: 70px;
+}
+
+.desireFormWrapper input[type='submit'] {
+	height: 35px;
+	margin: 20px 0 0 260px;
+}
+
+.desireFormWrapper .error{
+	color : red;
+	margin-left: 40px;
+}
+
+.desireFormWrapper #result {
+	color: blue;
+	margin-left: 100px;
+}
+
+<!-- {Chat css} -->
+
+.room {
+	width: 95%;
+	height: auto;
+	background-color: #F6FFFF;
+	border-radius: 5px;
+	border: 2px solid #C4E7E9;
+	float: left;
+	margin: 3% 0 0 2%;
+}
+
+.roomTitle {
+	width: 100%;
+	height: 22px;
+	background-color: #D0F5F7;
+	border-radius: 5px;
+	margin: 10px 0 0 0;
+	float: left;
+	padding-top: 4px;
+}
+
+.chatField {
+	width: 60%;
+	height: 450px;
+	background-color: #fff;
+	margin-top: 20px;
+	float: left;
+	border-radius: 5px;
+	overflow: auto;
+	word-wrap: break-word;
+	font: 18px serif;
+	line-height: 20px;
+	padding: 10px 0 0 10px;
+	text-align: justify;
+	border: 1px solid #C4E7E9;
+}
+
+.users {
+	width: 16%;
+	height: 450px;
+	background-color: #D3ECEE;
+	margin: 20px 0 0 9px;
+	float: left;
+	border: 1px solid #C4E7E9;
+	border-radius: 5px;
+	overflow-y: scroll;
+}
+
+.channels {
+	width: 16%;
+	height: 450px;
+	background-color: #fff;
+	margin: 20px 0 0 9px;
+	float: left;
+	border: 1px solid #C4E7E9;
+	border-radius: 5px;
+	overflow-y: scroll;
+}
+
+.messageFormWrapper {
+	width: 79%;
+	height: auto;
+	float: left;
+	margin: 5px 0 0 0;
+}
+
+.textArea {
+	width: 72%;
+	height: 40px;
+	border-radius: 5px;
+	font: 14px serif;
+	color: #001516;
+	float: left;
+	outline: 0;
+	border: 1px solid;
+}
+
+
+.button {
+	width: 21%;
+	height: 43px;
+	float: left;
+	border-radius: 5px;
+	margin-left: 2%;
+}
+
+.message {
+	font: 15px serif;
+	color: #001516;
+}
+
+
+.users ul li a {
+	display: block;
+	width: 100%;
+	height: 20px;
+	font: 15px serif;
+	padding-top: 3px;
+	text-align: center;
+	text-decoration: none;
+}
+
+.users ul li a:hover {
+	background-color: #BCE1E3
+}
+
+.channels ul li a {
+	display: block;
+	width: 80%;
+	height: 20px;
+	font: 15px serif;
+	padding-top: 4px;
+	text-align: center;
+	text-decoration: none;
+	background-color: #EDEDED;
+	border-radius: 10px;
+	border: 1px solid #CECECE;
+	margin: 10px auto 0 auto
+}
+
+.channels ul li a:hover {
+	background-color: #D5D4D4;
+	border: 1px solid #C2C2C2
+}
+
+.chatTitle {
+	font: 15px serif;
+	text-align: center;
+}
+
+#infoMessage {
+	color: red;
+	font: italic 16px serif;
+}
+
+<!-- {ChangePassword css} -->
+
+.changePasswordField {
+	width: 300px;
+	margin: 200px auto 0 auto;
+}
+
+.changePasswordField #changePassword input[type='password'] {
+	width: 300px;
+	margin: 15px 0 0 0;
+	height: 30px;
+	font: 18px serif;
+}
+
+.changePasswordField #changePassword input[type='submit'] {
+	width: 100px;
+	border-radius: 5px;
+	margin: 15px auto 0 230px;
+}
+
+.changePasswordField .error {
+	font: 16px serif;
+	color: red;
+}
+
+.changePasswordField #result {
+	color: blue;
+	margin: 100px 0 50px;
+}
+
+<!-- {Memorize css} -->
+
+.wordListWrapper {
+	width: 700px;
+	min-height: 730px;
+	background-color: #FFEEB8;
+	border-left: 5px double #FFE593;
+	border-right: 5px double #FFE593;
+	border-bottom: 7px double #FFE593;
+	border-radius: 0 0 5px 5px;
+	float: left;
+	padding-bottom: 20px;
+	background-color: #FFEEB8;
+	border-left: 5px double #FFE593;
+	border-right: 5px double #FFE593;
+	border-bottom: 7px double #FFE593;
+	border-radius: 0 0 5px 5px;
+	float: left;
+	padding-bottom: 20px;
+	margin-left: 43px;
+}
+
+.wordList {
+	width : 350px;
+	height: auto;
+	margin: 30px 0 0 175px;
+	float: left;
+	width: 350px;
+}
+
+.firstTitle, .secondTitle, .name, .meaning {
+	width: 150px;
+	height: 20px;
+	text-align: center;
+	float: left;
+	font: 20px serif;
+}
+
+.firstTitle, .secondTitle {
+	margin-bottom: 30px;
+	font-weight: bold;
+	color: #2B2958;
+}
+
+.name, .meaning {
+	margin-top: 15px;
+}
+
+label {
+	overflow: hidden;
+}
+
+.name label:hover, .meaning label:hover {
+	transition: color 300ms ease-in-out, background-color 200ms ease,
+		text-decoration 120ms ease;
+	cursor: pointer;
+	color: #EB0000;
+	background-color: #FFEBA6;
+	text-decoration: underline;
+}
+
+.arrow {
+	width: 50px;
+	height: 20px;
+	text-align: center;
+	margin-top: 15px;
+	font: 20px serif;
+	float: left;
+}
+
+.remindingList {
+	width: 165px;
+	height: auto;
+	float: left;
+	margin: 80px 0 0 10px;
+	font: 20px serif;
+}
+
+.remindingList div {
+	height: 20px;
+	margin-top: 15px;
+	overflow: auto;
+	color : #2C41DD;
+}
+
+<!-- {Common-Foreign-Local css} -->
+
+.foreignTranslationWrapper , .localTranslationWrapper {
+	width: 700px;
+	min-height: 730px;
+	background-color: #FFEEB8;
+	border-left: 5px double #FFE593;
+	border-right: 5px double #FFE593;
+	border-bottom: 7px double #FFE593;
+	border-radius: 0 0 5px 5px;
+	float: left;
+	padding-bottom: 20px;
+	background-color: #FFEEB8;
+	border-left: 5px double #FFE593;
+	border-right: 5px double #FFE593;
+	border-bottom: 7px double #FFE593;
+	border-radius: 0 0 5px 5px;
+	float: left;
+	padding-bottom: 20px;
+	margin-left: 43px;
+}
+
+.foreignTranslation , .localTranslation{
+	width : 350px;
+	height: auto;
+	margin: 30px 0 0 175px;
+	float: left;
+	width: 350px;
+}
+
+.firstTitle, .secondTitle, .guess, .meaning , .name{
+	width: 150px;
+	height: 20px;
+	text-align: center;
+	float: left;
+	font: 20px serif;
+}
+
+.firstTitle, .secondTitle {
+	margin-bottom: 30px;
+	font-weight: bold;
+	color: #2B2958;
+}
+
+.guess , .meaning , .name{
+	margin-top: 15px;
+}
+
+label {
+	overflow: hidden;
+}
+
+.name label:hover, .meaning label:hover {
+	transition: color 300ms ease-in-out, background-color 200ms ease,
+		text-decoration 120ms ease;
+	cursor: pointer;
+	color: #EB0000;
+	background-color: #FFEBA6;
+	text-decoration: underline;
+}
+
+.arrow {
+	width: 50px;
+	height: 20px;
+	text-align: center;
+	margin-top: 15px;
+	font: 20px serif;
+	float: left;
+}
+
+.emptyTitleError {
+	color: #2B2958;
+	font: 15px serif;
+	text-align: center;
+}
+
+.emptyTitleError a {
+	color: blue;
+	text-decoration: none;
+} 
+
+.emptyTitleError a:hover {
+	text-decoration: underline;
+}
+
+.foreignTranslationWrapper input[type='text'] , .localTranslationWrapper input[type='text'] {
+	width: 120px;
+}
+
+.foreignTranslationWrapper input[type='submit'] , .localTranslationWrapper input[type='submit'] {
+	width: 100px;
+	margin: 20px 0 0 250px;
+}
+
+<!-- {Successfull css} -->
+
+.successfullMessage {
+	border: 1px solid #E4D800;
+	border-radius: 5px;
+	font: 18px serif;
+	width: 400px;
+	text-align: justify;
+	padding: 10px 20px;
+	margin: 100px auto 0 auto
+}
+
+.successfullMessage a {
+	color: blue;
+	text-decoration: none;
+	transition: 1000ms color;
+}
+
+.successfullMessage a:hover {
+	text-decoration: underline;
+	color: #0000D1
+}
