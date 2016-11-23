@@ -24,7 +24,7 @@ Projeyi deploy etmek için(Eclipse) :
 The project provide to user store word and memorize , learning accent , examine self like features
 
 * Improved project in java and used some frameworks.
-* The frameworks is : Back-End { Spring (context,mvc,security,aop) , Hibernate } and Front-End{ jsp,css(el ile yazıldı),jquery,ajax };
+* The frameworks is : Back-End { Spring (context,mvc,security,aop) , Hibernate } and Front-End{ jsp,css(not used framework),jquery,ajax };
 * intermingled jsp and js for quick display the pages , therefore jsp can seem complex.
 * Server-Container : Tomcat 9
 
