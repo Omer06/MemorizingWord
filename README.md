@@ -7,8 +7,9 @@ Proje , kullanıcıya kelime deposu oluşturma. Bu kelime deposundaki kelimeleri
 fırsatlara olanak sağlar.
 
 * Proje javada geliştirilmiştir ve çeşitli frameworkler kullanılmıştır.
-* Bu frameworkler : Back-End { Spring (context,mvc,security,aop) , Hibernate } , Front-End{ jsp,css(el ile yazıldı),jquery,ajax };
+* Bu frameworkler : Back-End { Spring (context,mvc,security,aop) , Hibernate } , Front-End{ jsp,css(el ile yazıldı),jquery,ajax};
 * Sayfaların erken açılması için , js kodlarını jsp sayfalarının içine entegre ettim. Bu yüzden biraz karmaşık gözüküyor.
+* Server-Container : Tomcat 9
 
 Projeyi deploy etmek için(Eclipse) : 
 
@@ -24,10 +25,11 @@ The project provide to user store word and memorize , learning accent , examine 
 * Improved project in java and used some frameworks.
 * The frameworks is : Back-End { Spring (context,mvc,security,aop) , Hibernate } and Front-End{ jsp,css(el ile yazıldı),jquery,ajax };
 * intermingled jsp and js for quick display the pages , therefore jsp can seem complex.
+* Server-Container : Tomcat 9
 
 For run the project(Eclipse) : 
 
 * Install egit plugin from  eclipse marketplace.
 * Right-click in project explorer window then click import.
 * Click 'import from egit' under egit folder
-* in appeared window , enter info about the project then import the project.
+* In appeared window , enter info about the project then import the project.
