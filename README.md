@@ -17,6 +17,7 @@ Projeyi deploy etmek için(Eclipse) :
 * Project explorer sekmesinden sağa tıklayıp, import'a tıklayın.
 * Egit klasörünün altında "import from egit"  tıklayın
 * Gelen pencerede , proje ile alakalı bilgileri doldurup , projelerinize dahil edebilirsiniz.
+* Projeyi deploy etmeden önce bir veritabanı(name = Memorizingword , port=3306 , mysql) oluşturun. Roles tablosuna (1,ROLE_GUEST & 2,ROLE_ADMIN) bu iki veriyi ekleyin.
 
 # English-İngilizce : 
 
@@ -33,3 +34,4 @@ For run the project(Eclipse) :
 * Right-click in project explorer window then click import.
 * Click 'import from egit' under egit folder
 * In appeared window , enter info about the project then import the project.
+* Create a database(name = Memorizingword , port=3306 , mysql)  and add role (1,ROLE_GUEST & 2,ROLE_ADMIN) to roles table before deploy the project at tomcat
