@@ -11,7 +11,7 @@ fırsatlara olanak sağlar.
 * Sayfaların erken açılması için , js kodlarını jsp sayfalarının içine entegre ettim. Bu yüzden biraz karmaşık gözüküyor.
 * Server-Container : Tomcat 9
 
-Projeyi deploy etmek için(Eclipse) : 
+Projeyi çalıştırmak(run) etmek için(Eclipse) : 
 
 * Mağzadan egit eklentisini kurun.
 * Project explorer sekmesinden sağa tıklayıp, import'a tıklayın.
