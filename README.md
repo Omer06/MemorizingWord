@@ -1,4 +1,4 @@
-# The Word Memorization System(Kelime ezberleme Ezberleme)
+# The Word Memorization System(Kelime ezberleme Sistemi)
 The project vision is that able to memorize word to user ~ written in java.
 
 
